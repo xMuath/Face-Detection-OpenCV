@@ -22,11 +22,31 @@ $ sudo apt update
   ```
 $ sudo apt install python 3.9
 ```
-  Allow the process to complete and verify the Python version was installed sucessfully::
+  Allow the process to complete and verify the Python version was installed sucessfully:
 ```
 python --version
 ```
 you should see Python 3.9.x as the result.
+
+
+Step 4: Install the openCV library.
+Install PIP3
+```
+$ sudo apt update
+$ sudo apt install python3-pip
+```
+To install OpenCV Via PIP give the following command
+```
+$ pip install opencv-python
+```
+Test OpenCV Installation
+```
+$ python3
+ import cv2
+ print(cv2.__version__)
+'4.0.0'
+```
+
 
 Step 3: You need to install an Environment to run the python code there are alot of Environment but for this we will use Microsoft VS code you can download it from the link [here](https://code.visualstudio.com/download).
 
@@ -38,8 +58,9 @@ Step 6: Put a test picture that has faces inside the folder and rename it to 'te
 
 or you can not rename it and change the python code
 this is an included code in the main code in step 5.
+```
 img = cv2.imread('test.jpg')
-
+```
 as you see in the code above you can change the test.jpg to your picture's name.
 
 
